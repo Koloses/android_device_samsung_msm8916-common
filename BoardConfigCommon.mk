@@ -78,10 +78,12 @@ BOARD_HARDWARE_CLASS += \
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 AUDIO_FEATURE_ENABLED_KPI_OPTIMIZE := true
+TARGET_QCOM_AUDIO_VARIANT := caf
 USE_CUSTOM_AUDIO_POLICY := 1
 
 # Custom RIL class
 BOARD_RIL_CLASS := ../../../device/samsung/msm8916-common/ril/
+TARGET_RIL_VARIANT := caf
 
 # PowerHAL
 TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/samsung/msm8916-common/configs/power/power_ext.c
