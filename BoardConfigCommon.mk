@@ -84,6 +84,8 @@ USE_CUSTOM_AUDIO_POLICY := 1
 # Custom RIL class
 BOARD_RIL_CLASS := ../../../device/samsung/msm8916-common/ril/
 TARGET_RIL_VARIANT := caf
+# prevent sec-ril from building
+BOARD_PROVIDES_LIBRIL := false
 
 # PowerHAL
 TARGET_POWERHAL_SET_INTERACTIVE_EXT := device/samsung/msm8916-common/configs/power/power_ext.c
